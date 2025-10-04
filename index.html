@@ -2,12 +2,19 @@
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
-  <title>AnimeSayt - Kirish</title>
+  <title>AnimeSayt</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>AnimeSayt</h1>
+    <nav>
+      <span id="navButton" onclick="handleNav()">Royhattan otish</span>
+      <div id="menuIcon" onclick="toggleMenu()">≡</div>
+    </nav>
+  </header>
+
+  <div class="container">
     <div class="buttons">
       <button onclick="showLogin()">Kirish</button>
       <button onclick="showRegister()">Royhattan otish</button>
@@ -30,39 +37,11 @@
     <div id="panel" class="panel" style="display:none;"></div>
   </div>
 
-  <script>
-    function showLogin() {
-      document.getElementById('loginForm').style.display = 'block';
-      document.getElementById('registerForm').style.display = 'none';
-    }
+  <div id="menuPanel" style="display:none;" class="menu-panel">
+    <button onclick="showAnimeList()">Anime tizimi</button>
+    <button onclick="showUserList()">Foydalanuvchilar</button>
+  </div>
 
-    function showRegister() {
-      document.getElementById('registerForm').style.display = 'block';
-      document.getElementById('loginForm').style.display = 'none';
-    }
-
-    function login() {
-      const user = document.getElementById('loginUser').value;
-      const pass = document.getElementById('loginPass').value;
-      const panel = document.getElementById('panel');
-
-      if (user === 'admin1' && pass === 'adminsky') {
-        panel.innerHTML = '<h2>Admin Panel</h2><p>Xush kelibsiz, admin!</p>';
-      } else {
-        panel.innerHTML = `<h2>Foydalanuvchi Profil</h2><p>Xush kelibsiz, ${user}!</p>`;
-      }
-
-      panel.style.display = 'block';
-    }
-
-    function register() {
-      const user = document.getElementById('regUser').value;
-      const pass = document.getElementById('regPass').value;
-      const panel = document.getElementById('panel');
-
-      panel.innerHTML = `<h2>Profil yaratildi</h2><p>User: ${user}</p>`;
-      panel.style.display = 'block';
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
