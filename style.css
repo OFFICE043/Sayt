@@ -1,47 +1,52 @@
-/* Bu butun sahifa uchun asosiy stillar */
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    overflow: hidden; /* Sahifani aylantirishni o'chirish */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
-/* Asosiy konteyner uchun fon rasmi va markazlashtirish */
-#asosiyKonteyner {
-    height: 100%;
-    width: 100%;
-    /* Fon rasmi uchun URL - buni o'zingiz yoqtirgan rasmga o'zgartirishingiz mumkin */
-    background-image: url('https://w.forfun.com/fetch/97/9713165a58f430583f851d723795c6f6.jpeg');
-    background-size: cover; /* Rasm ekranni to'liq qoplashi uchun */
-    background-position: center; /* Rasm markazda turishi uchun */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header {
+  background-color: #1abc9c;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-/* O'rtadagi ma'lumot kartasi uchun stillar */
-#markaziyKarta {
-    background-color: rgba(0, 0, 0, 0.6); /* Qora rang 60% shaffoflik bilan */
-    padding: 40px;
-    border-radius: 15px; /* Qirralarni yumaloqlash */
-    color: white; /* Matn rangi */
-    max-width: 600px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Yupqa oq chegara */
-    backdrop-filter: blur(8px); /* Orqa fonni xiralashtirish effekti */
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Karta ichidagi sarlavha */
-.sarlavha {
-    font-size: 3em;
-    margin-bottom: 20px;
-    font-weight: 700;
+main {
+  padding: 30px;
 }
 
-/* Karta ichidagi matn */
-.matn {
-    font-size: 1.2em;
-    line-height: 1.6; /* Qatorlar orasidagi masofa */
+.anime-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.anime-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.anime-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #1abc9c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
 }
