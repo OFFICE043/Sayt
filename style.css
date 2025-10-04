@@ -1,52 +1,41 @@
 body {
   font-family: 'Segoe UI', sans-serif;
+  background-color: #ecf0f1;
   margin: 0;
-  background-color: #f0f0f0;
+  padding: 0;
 }
 
-header {
-  background-color: #1abc9c;
-  color: white;
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
   padding: 20px;
-  text-align: center;
-}
-
-nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-main {
-  padding: 30px;
-}
-
-.anime-list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.anime-card {
-  background-color: white;
   border-radius: 10px;
-  padding: 15px;
-  width: 220px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
 }
 
-.anime-card img {
-  width: 100%;
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.form input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.form button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.panel {
+  margin-top: 20px;
+  background-color: #dff9fb;
+  padding: 15px;
   border-radius: 8px;
-}
-
-footer {
-  background-color: #1abc9c;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
 }
